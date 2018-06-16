@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        android:background="#23bc12">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#23bc12">
+
+            <TextView
+                android:id="@+id/displaybtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b71c14"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Germany"
+                android:textColor="#ffffff"
+                android:textAllCaps="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/displaybtn"
+                android:background="#ffffff"
+                android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tn_desc"
+                        android:paddingLeft="10dp"
+                        android:text="hhhhhhh"
+                        android:layout_marginBottom="10dp"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tn_desc"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/temp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tn_readmore"
+                        android:text="Read More"
+                        android:textColor="#070eef"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignRight="@+id/tn_readmore"
+                        android:id="@+id/tn_expense"
+                        android:layout_marginRight="10dp"
+                        android:text="View Expenses"
+                        android:textColor="#070eef"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tx_readmore_onclcik"
+                        android:layout_below="@+id/tn_readmore"
+                        android:layout_marginTop="10dp"
+                        android:text="N/A"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tx_expense_onclcik"
+                        android:layout_below="@+id/tx_readmore_onclcik"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="138,780,000"/>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
