@@ -35,7 +35,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     SharedPreferences pref;
     SharedPreferences.Editor editor;
-    public ArrayList<PMVisit> visitslist,summitlist;
+    public ArrayList<PMVisit> visitslist,summitlist;//list arrays
     boolean connected = false;
     TextView b1;
     @Override
